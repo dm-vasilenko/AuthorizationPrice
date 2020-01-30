@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <!-- event catalog_product_is_salable_after -->
+    <event name="catalog_product_is_salable_after">
+        <observer name="web4pro_product_available" instance="Web4Pro\AuthorizationPrice\Observer\SalableObserver" />
+    </event>
+    <!-- event catalog_product_collection_load_after -->
+    <event name="catalog_product_collection_load_after">
+        <observer name="web4pro_product_available" instance="Web4Pro\AuthorizationPrice\Observer\CollectionObserver" />
+    </event>
+    <!-- event catalog_product_load_after -->
+    <event name="catalog_product_load_after">
+        <observer name="web4pro_product_available" instance="Web4Pro\AuthorizationPrice\Observer\ProductObserver" />
+    </event>
+</config>

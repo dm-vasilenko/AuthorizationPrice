@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="general">
+            <group id="authorization_price" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" >
+                <label>Authorization price configuration</label>
+                <field id="authorization_price_yesno" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" type="select">
+                    <label>Price view</label>
+                    <comment>Disable or enable price for unlogged users</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

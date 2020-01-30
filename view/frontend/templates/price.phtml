@@ -1,0 +1,6 @@
+<?php if ($block->getAccess()) :?>
+<form action="<?= $block->getUrl("customer/account/login") ?>" method="post">
+    <button type="submit" class="action submit primary">Log in to see the price</button>
+</form>
+<?php endif; ?>
+
